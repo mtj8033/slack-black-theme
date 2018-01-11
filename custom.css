@@ -163,7 +163,7 @@ ts-jumper input[type="text"],
 .p-channel_sidebar__link--selected:visited,
 .p-channel_sidebar__channel--selected:hover,
 .p-channel_sidebar__link--selected:hover {
-   background-color: #37864d !important;
+   background-color: var(--primary) !important;
    border: solid var(--border-bright);
    border-width: 0;
 }
