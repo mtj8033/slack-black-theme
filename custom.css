@@ -32,7 +32,7 @@ limitations under the License.
    --text-bright: #FFF;
    --text-special: var(--primary);
 
-   --scrollbar-background: #61AFEF;
+   --scrollbar-background: var(--primary);
    --scrollbar-border: var(--primary);
 }
 
@@ -40,13 +40,13 @@ h1, h2, h3, h4 {
   color: var(--text);
 }
 a, a:link, a:visited {
-    color: #61AFEF !important;
+    color: var(--primary) !important;
 }
 .popover_mask {
    background-color: rgba(0, 0, 0, 0.3);
 }
 .dense_meta.msg_inline_file_preview_toggler .msg_inline_file_preview_title, .dense_meta.msg_inline_img_toggler .msg_inline_file_preview_title, .meta.msg_inline_file_preview_toggler .msg_inline_file_preview_title, .meta.msg_inline_img_toggler .msg_inline_file_preview_title {
-    color: #61AFEF !important;
+    color: var(--primary) !important;
 }
 /* Team Picker */
 .TeamSidebar, .TeamSidebar .StoplightContainer, .TeamSidebar .TeamSidebar-addArea {
@@ -103,7 +103,7 @@ body:not(.loading) #team_menu:active {
     width: 90% !important;
     padding: 5px !important;
     border-radius: 4px !important; 
-	color: #fff !important;
+	color: var(--text-bright) !important;
 }
 
 ts-message .message_gutter {padding-right: 15px !important;}
@@ -115,7 +115,7 @@ ts-message .message_content {margin-left: 82px !important;}
 .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name,
 .p-channel_sidebar__section_heading_label--clickable:hover,
 .p-channel_sidebar__quickswitcher:hover {
-   color: #FFF !important;
+   color: var(--text-bright) !important;
 }
 
 /*broken*/
@@ -222,7 +222,7 @@ li.active[class] span,
 }
 .p-channel_sidebar__channel--selected .p-channel_sidebar__name {
     opacity: 1;
-    color: #fff !important;
+    color: var(--text-bright) !important;
 }
 /*also add border to unread count for individual channels*/
 .p-channel_sidebar__badge {
@@ -257,12 +257,12 @@ ts-jumper ol li .member_real_name, ts-jumper ol li .view_name, ts-jumper ol li .
 }
 .light_theme ts-message .message_content .message_sender {
     font-weight: 900;
-    color: #61AFEF !important;
+    color: var(--primary) !important;
     line-height: 18px;
 }
 .light_theme ts-message .message_content a.message_sender, #msg_input::-webkit-input-placeholder,
 ts-jumper input[type="text"]::-webkit-input-placeholder {
-  color: #61AFEF !important;
+  color: var(--primary) !important;
 }
 
 #msg_input, #primary_file_button {
@@ -505,16 +505,16 @@ a:hover{
 .channels_list_holder ul li .mpim_name,
 .channels_list_holder ul li>a:link,
 ts-message a.timestamp{
-  color: #aaa !important;
+  color: var(--text) !important;
 }
 #channels_scroller.show_which_channel_is_active ul li.active .im_name{
-  color: #fff !important;
+  color: var(--text-bright) !important;
 }
 
 #msgs_div .unread_divider.no_unreads .divider_label
 {
  background: #000 !important;
- color: #aaa !important;
+ color: var(--text) !important;
 }
 
 #msgs_div .unread_divider.no_unreads hr{
@@ -576,7 +576,7 @@ ts-message a.timestamp{
    color: var(--text);
 }
 #client_header {
-    background: #61AFEF !important;
+    background: var(--primary) !important;
     box-shadow: 10px 0px 5px rgb(1,1,1);
     padding-bottom: 5px;
 }
@@ -926,7 +926,7 @@ div::-webkit-scrollbar-thumb {
 .cm-s-default .cm-comment {color: #f80}
 .cm-s-default .cm-string {color: #f33}
 .cm-s-default .cm-string-2 {color: #f50}
-.cm-s-default .cm-meta,.cm-s-default .cm-qualifier {color: #aaa}
+.cm-s-default .cm-meta,.cm-s-default .cm-qualifier {color: var(--text)}
 .cm-s-default .cm-builtin {color: #96f}
 .cm-s-default .cm-bracket {color: #ffa}
 .cm-s-default .cm-tag {color: #5f0}
@@ -1023,10 +1023,10 @@ ts-jumper ts-jumper-container {
   box-shadow: 0 0px 0px rgba(0,0,0,1);
 }
 #message_edit_container .message_input {
-    border: 1px solid #61AFEF !important;
+    border: 1px solid var(--primary) !important;
 }
 #message_edit_container .message_input.focus {
-    border-color: #61AFEF !important;
+    border-color: var(--primary) !important;
     box-shadow: 0 0 7px rgba(39,128,248,.15);
     outline-offset: 0;
     outline: 0;
@@ -1035,7 +1035,7 @@ ts-jumper ts-jumper-container {
     background: #333 !important;
 }
 #message_edit_container .message_input.focus {
-    border-color: #61AFEF !important;
+    border-color: var(--primary) !important;
 }
 #message_edit_container .message_input {
     background: #333 !important;
